@@ -1,0 +1,326 @@
+/* Use same fonts as Google */
+
+.topfold-before {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.topfold-after {
+    height: 50vh;
+    overflow: hidden;
+}
+
+.tf-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 48px;
+}
+
+.tf-heading {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: center;
+}
+
+.tf-description {
+    font-size: 20px;
+    margin: 24px 0px;
+    text-align: center;
+}
+
+.tf-left-btns {
+    margin-top: 20px;
+    display: flex;
+}
+
+.tf-left-secondary-btn {
+    margin-left: 36px;
+}
+
+.tf-left-infoStats {
+    display: flex;
+    padding: 40px 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tf-is-infoItem {
+    margin-right: 24px;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.tf-infoItem-count {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.tf-infoItem-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tf-right {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.tf-right-diamond {
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(45deg);
+    margin-top: 10vh;
+}
+
+.tf-r-diamond-item {
+    height: 280px;
+    width: 250px;
+    overflow: hidden;
+    margin: 6px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    border: 3px solid var(--white);
+    border-radius: 12px;
+}
+
+.tf-r-diamond-img {
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.img-listing-item {
+    height: 280px;
+    width: 200px;
+    border: 3px solid var(--white);
+    border-radius: 12px;
+    object-fit: contain;
+    display: block;
+}
+
+.tf-r-bg-blob {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-blob);
+    filter: blur(160.58px);
+    position: absolute;
+    z-index: -99;
+    right: 30%;
+    top:-25%;
+    transform: translate(-10%);
+}
+
+.tf-r-bg-blob-search {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-blob);
+    filter: blur(160.58px);
+    position: absolute;
+    z-index: -99;
+    right: -10%;
+    top:-25%;
+    transform: translate(-10%);
+}
+
+.header {
+    padding: 0 12px;
+    width: 500px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    margin: 20px;
+  }
+  
+  .main {
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: absolute;
+  }
+  
+  .search-box-after {
+      background: black;
+      height: 50px;
+      border-radius: 50px;
+      padding: 10px;
+      margin-top: 20px;
+      border: 2px solid var(--white);
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .search-box-before {
+        background: black;
+        height: 50px;
+        border-radius: 50px;
+        padding: 10px;
+        margin-top: 20px;
+        border: 2px solid var(--white);
+        width: 550px;
+        align-items: center;
+        justify-content: center;
+  }
+  
+  .search-btn {
+      float: right;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: var(--bg-blob);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: 2px solid var(--white);
+  }
+
+    .delete-btn {
+        float: right;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+    }
+  
+  .search-txt-before {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0;
+      color: white;
+      font-size: 24px;
+      transition: 0.4s;
+      line-height: 50px;
+      width: 80%;
+      padding: 0 6px;
+      font-weight: 600;
+  }
+
+  .search-txt-after {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 24px;
+    transition: 0.4s;
+    line-height: 50px;
+    width: 90%;
+    padding: 0 6px;
+    font-weight: 600;
+}
+  
+  .image-listing {
+    position: relative;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    bottom: 2px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    background: rgba(143, 0, 255, 1);
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--white);
+  }
+  
+  .listing ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+  }
+  
+  .listing ul li {
+      list-style: none;
+      flex: 0 0 33.333333%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  
+  .loading-scrn {
+    display: inline-block;
+    left: 50%;
+    top: 90%;
+    position: absolute;
+    transform: translate(-50%, -90%);
+    width: 80px;
+    height: 80px;
+  }
+  
+  .loading-scrn div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #ffffff;
+    animation: loading-scrn 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  
+  .loading-scrn div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  
+  .loading-scrn div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  
+  .loading-scrn div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  
+  .confirm-mssg {
+      position: fixed;
+      left: 50%;
+      top: 93%;
+      transform: translate(-50%, -93%);
+  }
+  
+  .confirm-mssg-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      width: 200px;
+      background: rgba(143, 0, 255, 1);
+      height: 40px;
+      border-radius: 40px;
+      padding: 10px;
+      font-size: 25px;
+      font-weight: 700;
+      border: 2px solid var(--white);
+  }
+  
+  @keyframes loading-scrn {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
